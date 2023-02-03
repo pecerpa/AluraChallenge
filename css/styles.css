@@ -1,0 +1,201 @@
+* {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  margin: 0;
+  padding: 0;
+  transition: .5s;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #cdefc4;
+  background: linear-gradient(90deg, #bfd1ed 0, #cdefc4 58%);
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
+header {
+  height: 50px;
+}
+
+section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+
+
+.boton {
+  border-radius: 25px;
+  margin: 0 5px 0 5px;
+  width: 300px;
+  cursor: pointer;
+  border: 1px rgba(255, 255, 255, .4);
+  background: rgba(255, 255, 255, .4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.boton:hover {
+  background: rgba(1, 137, 228, 0.738);
+}
+
+#btn-copiar {
+  margin-top: 20px;
+}
+
+#btn-copiar:hover {
+  background: rgba(54, 228, 1, 0.564)
+}
+
+#btn-desencriptar:hover {
+  background: rgba(228, 5, 1, 0.564);
+}
+
+#container-input-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+#container-out-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+#input {
+  resize: none;
+  border: none;
+}
+
+#input:focus {
+  outline: none;
+}
+
+#output {
+  resize: none;
+  height: 300px;
+  border-radius: 10px;
+  border: none;
+}
+
+#output:focus {
+  outline: none;
+}
+
+#output-section {
+  margin-right: 90px;
+  ;
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-image: url(/images/carga-imagen.gif);
+  background-position: center;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+}
+
+#output-section textarea {
+  background: rgba(255, 255, 255, .4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+}
+
+#output-section textarea:hover {
+  background: rgba(167, 163, 163, 0.4);
+}
+
+#input-section textarea {
+  text-transform: lowercase;
+  background: rgba(255, 255, 255, .4);
+  border-radius: 25px;
+  padding: 0 10px 0 10px;
+}
+
+#input-section textarea:hover {
+  background: rgba(167, 163, 163, 0.4);
+  border-radius: 25px;
+}
+
+.gradient {
+  background: #1c4e9b;
+  background: linear-gradient(90deg, #bfd1ed, #cdefc4 58%);
+}
+
+.glass {
+  background: rgba(255, 255, 255, .4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+/* media query */
+
+@media (max-width: 800px) {
+
+  * {
+    overflow: initial;
+  }
+
+  #main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section {
+    width: 100%;
+    height: 50%;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+
+  #output-section {
+    width: 100%;
+    margin: 0 10px 0 10px;
+    height: 300px;
+    margin-top: 10%;
+    background-image: url(/images/carga-imagen.gif);
+  }
+
+  #input-section {
+    border: 1px rgba(255, 255, 255, .4);
+    border-radius: 10px;
+    height: 300px;
+    margin-top: 10%;
+    background-size: 50px;
+    border: none;
+
+  }
+
+  #main {
+    margin: 0 10px 0 10px;
+  }
+}
