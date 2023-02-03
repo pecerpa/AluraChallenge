@@ -6,10 +6,10 @@ function btnEncriptar() {
     textareaOutput.value = "";
     const textoEncriptado = encriptar(textareaInput.value);
     textareaOutput.value = textoEncriptado;
-    outputSection.style.backgroundImage = 'url(/images/binary-animation.gif)';
+    outputSection.style.backgroundImage = 'url(images/binary-animation.gif)';
     outputSection.style.backgroundSize = '450px 700px'
-    if (textareaOutput.value == '') {
-        outputSection.style.backgroundImage = 'url(/images/carga-imagen.gif)';
+    if(textareaOutput.value == '') { 
+        outputSection.style.backgroundImage = 'url(images/carga-imagen.gif)';
         outputSection.style.backgroundSize = '400px 400px'
     };
     textareaInput.value = "";
@@ -18,13 +18,14 @@ function btnEncriptar() {
 function btnDesencriptar() {
     const textoDesencriptado = desencriptar(textareaInput.value);
     textareaOutput.value = textoDesencriptado;
-    outputSection.style.backgroundImage = 'url(/images/binary-animation.gif)';
-    if (textareaOutput.value == '') {
-        outputSection.style.backgroundImage = 'url(/images/carga-imagen.gif)';
+    outputSection.style.backgroundImage = 'url(images/binary-animation.gif)';
+    outputSection.style.backgroundSize = '450px 700px'
+    if(textareaOutput.value == '') { 
+        outputSection.style.backgroundImage = 'url(images/carga-imagen.gif)';
         outputSection.style.backgroundSize = '400px 400px'
     }
     textareaInput.value = "";
-
+    
 }
 
 function copiar() {
@@ -34,7 +35,7 @@ function copiar() {
     aux.select();
     document.execCommand("copy");
     document.body.removeChild(aux);
-}
+    }
 
 function encriptar(stringEncriptada) {
     let matrizCodigo = [['e', 'enter'], ['i', 'imes'], ['a', 'ai'], ['o', 'ober'], ['u', 'ufat']];

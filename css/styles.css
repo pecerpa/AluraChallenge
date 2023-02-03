@@ -111,7 +111,7 @@ section {
   display: flex;
   align-items: center;
   text-align: center;
-  background-image: url(/images/carga-imagen.gif);
+  background-image: url(../images/carga-imagen.gif);
   background-position: center;
   background-size: 400px 400px;
   background-repeat: no-repeat;
@@ -182,7 +182,7 @@ section {
     margin: 0 10px 0 10px;
     height: 300px;
     margin-top: 10%;
-    background-image: url(/images/carga-imagen.gif);
+    background-image: url(../images/carga-imagen.gif);
   }
 
   #input-section {
